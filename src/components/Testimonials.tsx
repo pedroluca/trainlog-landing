@@ -1,0 +1,119 @@
+import React from 'react';
+import { Star, Quote } from 'lucide-react';
+
+const Testimonials: React.FC = () => {
+  // ============================================
+  // 📝 PERSONALIZE OS DEPOIMENTOS AQUI!
+  // ============================================
+  // Para cada depoimento, edite:
+  // - name: Nome completo do usuário
+  // - role: Profissão ou descrição (ex: "Personal Trainer", "Estudante", "Crossfiteiro")
+  // - avatar: Emoji que representa o usuário (💪 🏋️‍♀️ 🎯 🌟 🔥 💯 ⚡ 🏆 etc)
+  // - rating: Número de estrelas (1 a 5)
+  // - text: O depoimento completo do usuário
+  
+  const testimonials = [
+    {
+      name: 'Carlos Silva',
+      role: 'Praticante de Musculação',
+      avatar: '💪',
+      rating: 5,
+      text: 'O TrainLog mudou completamente minha rotina na academia. Consigo ver minha evolução semana a semana e isso me mantém super motivado!'
+    },
+    {
+      name: 'Ana Paula',
+      role: 'Personal Trainer',
+      avatar: '🏋️‍♀️',
+      rating: 5,
+      text: 'Recomendo para todos meus alunos. A forma como o app organiza os treinos e mostra o progresso é perfeita para manter o foco.'
+    },
+    {
+      name: 'João Pedro',
+      role: 'Atleta Amador',
+      avatar: '🎯',
+      rating: 5,
+      text: 'Já testei vários apps de treino e o TrainLog é de longe o mais completo e fácil de usar. O modo offline é essencial!'
+    },
+    {
+      name: 'Mariana Costa',
+      role: 'Iniciante',
+      avatar: '🌟',
+      rating: 5,
+      text: 'Como iniciante, os templates prontos me ajudaram muito. Em 3 meses já vi resultados incríveis acompanhando tudo pelo app!'
+    }
+    // Adicione mais depoimentos copiando o formato acima:
+    // {
+    //   name: 'Seu Nome Aqui',
+    //   role: 'Seu Papel',
+    //   avatar: '🔥',
+    //   rating: 5,
+    //   text: 'Seu depoimento aqui...'
+    // },
+  ];
+
+  return (
+    <section className="py-20 px-4 bg-dark-card">
+      <div className="container mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            O Que Nossos <span className="text-primary">Usuários Dizem</span>
+          </h2>
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+            Junte-se a centenas de atletas que já transformaram seus treinos
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="glass rounded-2xl p-6 border border-gray-800 hover:border-primary transition relative"
+            >
+              {/* Quote icon */}
+              <div className="absolute top-4 right-4 text-primary/20">
+                <Quote className="w-8 h-8" />
+              </div>
+
+              {/* Avatar */}
+              <div className="text-5xl mb-4">{testimonial.avatar}</div>
+
+              {/* Rating */}
+              <div className="flex gap-1 mb-4">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                ))}
+              </div>
+
+              {/* Testimonial text */}
+              <p className="text-gray-300 mb-6 leading-relaxed">
+                "{testimonial.text}"
+              </p>
+
+              {/* Author */}
+              <div className="pt-4 border-t border-gray-800">
+                <div className="font-semibold text-white">{testimonial.name}</div>
+                <div className="text-sm text-gray-400">{testimonial.role}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Social proof numbers */}
+        <div className="mt-16 text-center">
+          <div className="inline-flex items-center gap-2 glass px-6 py-3 rounded-full border border-gray-800">
+            <div className="flex -space-x-2">
+              <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-sm">💪</div>
+              <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-sm">🏋️</div>
+              <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-sm">⭐</div>
+            </div>
+            <span className="text-gray-300">
+              <span className="font-bold text-white">500+</span> atletas já estão treinando melhor
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Testimonials;

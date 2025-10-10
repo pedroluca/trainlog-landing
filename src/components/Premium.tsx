@@ -1,0 +1,160 @@
+import React, { useState } from 'react';
+import { Check, Crown, Zap } from 'lucide-react';
+import PremiumModal from './PremiumModal';
+
+interface PremiumProps {
+  onCtaClick: () => void;
+}
+
+const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
+  const [isPremiumModalOpen, setIsPremiumModalOpen] = useState(false);
+
+  const freeFeatures = [
+    'Registro ilimitado de treinos',
+    'Biblioteca de exercícios completa',
+    'Templates básicos de treino',
+    'Histórico de 30 dias',
+    'Modo offline',
+  ];
+
+  const premiumFeatures = [
+    'TUDO da conta padrão',
+    'Histórico ilimitado de treinos',
+    'Análises avançadas e estatísticas',
+    // 'Templates personalizados ilimitados',
+    'Gráficos de progresso detalhados',
+    // 'Exportação de dados',
+    'Suporte prioritário',
+    // 'Sem anúncios',
+  ];
+
+  return (
+    <section id="premium" className="py-20 px-4 bg-dark-bg relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-premium rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="container mx-auto relative z-10">
+        <div className="text-center mb-16">
+          <div className="inline-block bg-gradient-premium text-white px-6 py-2 rounded-full font-bold mb-4">
+            💎 PLANOS E PREÇOS
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Comece Sua Jornada <span className="text-gradient-premium">Hoje Mesmo</span>
+          </h2>
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+            R$ 10 para criar sua conta + upgrade Premium opcional
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {/* Standard Account */}
+          <div className="glass rounded-3xl p-8 border border-gray-800">
+            <div className="flex items-center gap-3 mb-6">
+              <Zap className="w-8 h-8 text-primary" />
+              <div>
+                <h3 className="text-2xl font-bold text-white">Conta Padrão</h3>
+                <p className="text-gray-400">Tudo que você precisa</p>
+              </div>
+            </div>
+
+            <div className="mb-8">
+              <div className="text-4xl font-bold text-white mb-2">R$ 10,00</div>
+              <div className="text-primary text-sm font-semibold">PAGAMENTO ÚNICO PARA CRIAR A CONTA</div>
+              <div className="text-gray-400 mt-1">Acesso completo vitalício</div>
+            </div>
+
+            <ul className="space-y-4 mb-8">
+              {freeFeatures.map((feature, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-300">{feature}</span>
+                </li>
+              ))}
+            </ul>
+
+            <button
+              onClick={onCtaClick}
+              className="w-full bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-4 rounded-xl transition"
+            >
+              Criar Conta - R$ 10
+            </button>
+          </div>
+
+          {/* Premium Plan */}
+          <div className="relative">
+            {/* Popular badge */}
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-premium text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg z-10">
+              ⭐ UPGRADE OPCIONAL
+            </div>
+
+            <div className="glass rounded-3xl p-8 border-2 border-amber-500 relative overflow-hidden">
+              {/* Shine effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent"></div>
+
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-6">
+                  <Crown className="w-8 h-8 text-amber-500" />
+                  <div>
+                    <h3 className="text-2xl font-bold text-white">Premium</h3>
+                    <p className="text-gray-400">Recursos avançados</p>
+                  </div>
+                </div>
+
+                <div className="mb-8">
+                  <div className="flex items-baseline gap-2 mb-2">
+                    <span className="text-4xl font-bold text-gradient-premium">R$ 14,90</span>
+                  </div>
+                  <div className="text-sm text-gray-400 mb-2">
+                    + R$ 10 da conta = <span className="font-bold text-white">R$ 24,90 total</span>
+                  </div>
+                  <div className="text-primary text-sm font-semibold">UPGRADE ÚNICO VITALÍCIO</div>
+                  <div className="text-amber-500 text-sm mt-1">💳 Opcional - só se você quiser mais recursos</div>
+                </div>
+
+                <ul className="space-y-4 mb-8">
+                  {premiumFeatures.map((feature, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-200 font-medium">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <button
+                  onClick={() => setIsPremiumModalOpen(true)}
+                  className="w-full bg-gradient-premium hover:opacity-90 text-white font-bold px-6 py-4 rounded-xl transition shadow-lg shadow-amber-500/30"
+                >
+                  Upgrade para Premium
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Payment info */}
+        <div className="text-center mt-12 text-gray-400 text-sm max-w-3xl mx-auto">
+          <p className="text-lg font-semibold text-white mb-3">Como Funciona:</p>
+          <div className="grid md:grid-cols-2 gap-4 text-left">
+            <div className="glass rounded-lg p-4 border border-gray-800">
+              <p className="font-semibold text-primary mb-2">1️⃣ Criar Conta (R$ 10)</p>
+              <p className="text-sm">Pagamento único para criar sua conta no TrainLog. Acesso completo a todos os recursos padrão, para sempre.</p>
+            </div>
+            <div className="glass rounded-lg p-4 border border-gray-800">
+              <p className="font-semibold text-amber-500 mb-2">2️⃣ Premium (R$ 14,90) - Opcional</p>
+              <p className="text-sm">Quer mais? Faça upgrade único para desbloquear recursos avançados. É opcional, só se você quiser!</p>
+            </div>
+          </div>
+          <p className="mt-4">💡 Pagamentos via PIX com aprovação rápida por WhatsApp</p>
+          <p className="mt-2 font-semibold text-white">Sem mensalidades! Pague uma vez e use para sempre! 🎉</p>
+        </div>
+      </div>
+
+      {/* Premium Modal */}
+      <PremiumModal isOpen={isPremiumModalOpen} onClose={() => setIsPremiumModalOpen(false)} />
+    </section>
+  );
+};
+
+export default Premium;
