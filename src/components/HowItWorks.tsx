@@ -47,7 +47,7 @@ const HowItWorks: React.FC = () => {
 
               <div className="relative z-10 text-center">
                 {/* Step number */}
-                <div className="inline-block bg-primary/20 text-primary font-bold text-2xl w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <div className="bg-primary/20 text-primary font-bold text-2xl w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
                   {index + 1}
                 </div>
 

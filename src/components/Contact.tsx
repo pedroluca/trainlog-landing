@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-6">
           {/* WhatsApp */}
           <a
-            href="https://wa.me/5511999999999"
+            href="https://wa.me/5577936181281"
             target="_blank"
             rel="noopener noreferrer"
             className="glass rounded-2xl p-8 border border-gray-800 hover:border-primary transition group flex flex-col items-center text-center"
@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
 
           {/* Email */}
           <a
-            href="mailto:contato@trainlog.app"
+            href="mailto:suporte@trainlog.app"
             className="glass rounded-2xl p-8 border border-gray-800 hover:border-primary transition group flex flex-col items-center text-center"
           >
             <div className="bg-primary/20 p-4 rounded-full mb-4 group-hover:bg-primary/30 transition">
@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
               Prefere email? Respondemos rapidamente
             </p>
             <div className="flex items-center gap-2 text-primary font-semibold">
-              <span>contato@trainlog.app</span>
+              <span>suporte@trainlog.app</span>
               <ExternalLink className="w-4 h-4" />
             </div>
           </a>

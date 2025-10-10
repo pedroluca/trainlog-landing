@@ -14,11 +14,11 @@ const Testimonials: React.FC = () => {
   
   const testimonials = [
     {
-      name: 'Carlos Silva',
-      role: 'Praticante de Musculação',
+      name: 'Cinthia Alves',
+      role: 'Enfermeira',
       avatar: '💪',
       rating: 5,
-      text: 'O TrainLog mudou completamente minha rotina na academia. Consigo ver minha evolução semana a semana e isso me mantém super motivado!'
+      text: 'O sistema é ótimo, fácil, prático e dinâmico.'
     },
     {
       name: 'Ana Paula',
