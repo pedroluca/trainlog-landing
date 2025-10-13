@@ -61,14 +61,14 @@ const PremiumModal: React.FC<PremiumModalProps> = ({ isOpen, onClose }) => {
               </li>
               <li className="flex items-start">
                 <span className="text-gradient-premium font-bold mr-2">5.</span>
-                <span>Pague <strong className="text-amber-500">R$ 14,90</strong> via PIX e pronto! 🎉</span>
+                <span>Pague <strong className="text-amber-500">R$ 9,90</strong> via PIX e pronto! 🎉</span>
               </li>
             </ol>
           </div>
 
           <div className="bg-gradient-premium/10 border border-amber-500/30 rounded-lg p-4 mb-6">
             <p className="text-sm text-gray-300">
-              💡 <strong className="text-white">Ainda não tem conta?</strong> Crie primeiro por R$ 10 e depois faça o upgrade quando quiser!
+              💡 <strong className="text-white">Ainda não tem conta?</strong> Crie primeiro por R$ 14,90 e depois faça o upgrade quando quiser!
             </p>
           </div>
 

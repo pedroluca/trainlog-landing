@@ -46,7 +46,7 @@ const CTAModal: React.FC<CTAModalProps> = ({ isOpen, onClose }) => {
               </li>
               <li className="flex items-start">
                 <span className="text-primary font-bold mr-2">2.</span>
-                <span>Efetue o pagamento de <strong className="text-white">R$ 10</strong> via PIX</span>
+                <span>Efetue o pagamento de <strong className="text-white">R$ 14,90</strong> via PIX</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary font-bold mr-2">3.</span>

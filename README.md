@@ -1,4 +1,4 @@
-# TrainLog Landing Page# TrainLog Landing Page# TrainLog Landing Page# TrainLog Landing Page# React + TypeScript + Vite
+# TrainLog Landing Page# TrainLog Landing Page# TrainLog Landing Page# TrainLog Landing Page# TrainLog Landing Page# React + TypeScript + Vite
 
 
 
@@ -10,7 +10,7 @@ Landing page para TrainLog - o app completo de rastreamento de treinos fitness.
 
 
 
-### Criação de Conta - R$ 10,00
+### Criação de Conta - R$ 14,90
 
 - **Pagamento:** Único para criar sua conta
 
@@ -30,13 +30,13 @@ Landing page para TrainLog - o app completo de rastreamento de treinos fitness.
 
   - Uso vitalício
 
-- **O que você ganha:**## 💰 Modelo de PreçosLanding page for TrainLog - the complete fitness training tracker web app.This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- **O que você ganha:**## 💰 Modelo de PreçosLanding page para TrainLog - o app completo de rastreamento de treinos fitness.
 
-### Premium - R$ 14,90 (Upgrade Opcional)
+### Premium - R$ 9,90 (Upgrade Opcional)
 
 - **Pagamento:** Único e vitalício  - Acesso completo ao app
 
-- **Total:** R$ 24,90 (R$ 10 conta + R$ 14,90 upgrade)
+- **Total:** R$ 24,80 (R$ 14,90 conta + R$ 9,90 upgrade)
 
 - **É um bônus!** Recursos extras para quem quiser:  - Registro ilimitado de treinos
 
@@ -46,7 +46,7 @@ Landing page para TrainLog - o app completo de rastreamento de treinos fitness.
 
   - Templates personalizados ilimitados
 
-  - Gráficos de progresso detalhados  - Templates básicos de treino### Plano Básico - R$ 10,00
+  - Gráficos de progresso detalhados  - Templates básicos de treino### Criação de Conta - R$ 10,00
 
   - Exportação de dados
 
@@ -54,15 +54,15 @@ Landing page para TrainLog - o app completo de rastreamento de treinos fitness.
 
   - Sem anúncios
 
-  - Modo offline- **Pagamento:** Único e vitalício ✅
+  - Modo offline- **Pagamento:** Único para criar sua conta
 
-**💡 R$ 10 = Conta completa vitalícia | Premium = Opcional para quem quer mais!**
+**💡 R$ 14,90 = Conta completa vitalícia | Premium (R$ 9,90) = Opcional para quem quer mais!**
 
   - Uso vitalício
 
 ## 🎨 Design
 
-- **Benefícios:**## 🎨 DesignCurrently, two official plugins are available:
+- **O que você ganha:**## 💰 Modelo de PreçosLanding page for TrainLog - the complete fitness training tracker web app.This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 - **Dark Theme:** Background escuro (#1a1a1a) com verde accent (#27AE60)
 
@@ -70,7 +70,7 @@ Landing page para TrainLog - o app completo de rastreamento de treinos fitness.
 
 - **Glassmorphism:** Efeitos de backdrop-blur
 
-- **Responsive:** Design mobile-first que funciona em todos os dispositivos- **Pagamento:** Único e vitalício  - Registro ilimitado de treinos
+- **Responsive:** Design mobile-first que funciona em todos os dispositivos- **Pagamento:** Único e vitalício  - Acesso completo ao app
 
 
 
@@ -78,7 +78,7 @@ Landing page para TrainLog - o app completo de rastreamento de treinos fitness.
 
 
 
-- ✅ **Hero Section** - Primeira impressão impactante com CTAs- **É um bônus!** Recursos extras para quem quiser:  - Biblioteca de exercícios completa
+- ✅ **Hero Section** - Primeira impressão impactante com CTAs- **É um bônus!** Recursos extras para quem quiser:  - Registro ilimitado de treinos
 
 - ✅ **Features Grid** - 8 recursos principais com ícones
 
@@ -86,7 +86,7 @@ Landing page para TrainLog - o app completo de rastreamento de treinos fitness.
 
 - ✅ **How It Works** - Processo em 4 passos
 
-- ✅ **Testimonials** - Depoimentos de usuários (personalizável)  - Análises avançadas e estatísticas  - Templates básicos de treino
+- ✅ **Testimonials** - Depoimentos de usuários (personalizável)  - Análises avançadas e estatísticas  - Biblioteca de exercícios completa
 
 - ✅ **Premium Pricing** - Comparação Conta vs Premium
 
@@ -94,7 +94,7 @@ Landing page para TrainLog - o app completo de rastreamento de treinos fitness.
 
 - ✅ **Footer** - Links e redes sociais
 
-- ✅ **CTA Modal** - Captura para criação de conta  - Gráficos de progresso detalhados  - Histórico de 30 dias- **Dark Theme:** Primary dark background (#1a1a1a) with green accent (#27AE60)- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- ✅ **CTA Modal** - Captura para criação de conta  - Gráficos de progresso detalhados  - Templates básicos de treino### Plano Básico - R$ 10,00
 
 - ✅ **Premium Modal** - Instruções de upgrade
 
@@ -102,7 +102,7 @@ Landing page para TrainLog - o app completo de rastreamento de treinos fitness.
 
 
 
-## 🛠️ Tech Stack  - Suporte prioritário  - Modo offline
+## 🛠️ Tech Stack  - Suporte prioritário  - Histórico de 30 dias
 
 
 
@@ -110,7 +110,7 @@ Landing page para TrainLog - o app completo de rastreamento de treinos fitness.
 
 - **TypeScript** - Segurança de tipos
 
-- **Vite 7** - Build tool rápido- **Premium Styling:** Gold gradient for premium features (#F59E0B to #D97706)- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Vite 7** - Build tool rápido  - Modo offline- **Pagamento:** Único e vitalício ✅
 
 - **Tailwind CSS v3** - Estilização utility-first
 
@@ -118,7 +118,7 @@ Landing page para TrainLog - o app completo de rastreamento de treinos fitness.
 
 - **pnpm** - Gerenciador de pacotes
 
-### Premium - R$ 14,90
+  - Uso vitalício
 
 ## 📦 Instalação
 
@@ -126,7 +126,7 @@ Landing page para TrainLog - o app completo de rastreamento de treinos fitness.
 
 ```bash
 
-# Instalar dependências- **Pagamento:** Único e vitalício (upgrade permanente) ✅- **Glassmorphism:** Beautiful backdrop-blur effects
+# Instalar dependências- **Benefícios:**## 🎨 DesignCurrently, two official plugins are available:
 
 pnpm install
 
@@ -134,7 +134,7 @@ pnpm install
 
 # Rodar servidor de desenvolvimento
 
-pnpm run dev- **Premium Styling:** Gradiente dourado para recursos premium (#F59E0B to #D97706)- **Total:** R$ 24,90 (R$ 10 básico + R$ 14,90 upgrade)
+pnpm run dev- **Premium Styling:** Gradiente dourado para recursos premium (#F59E0B to #D97706)### Premium - R$ 14,90 (Upgrade Opcional)
 
 
 
@@ -142,7 +142,7 @@ pnpm run dev- **Premium Styling:** Gradiente dourado para recursos premium (#F59
 
 pnpm run build
 
-- **Responsive:** Design mobile-first que funciona em todos os dispositivos- **Benefícios adicionais:**- **Responsive:** Mobile-first design that works on all devices## React Compiler
+- **Responsive:** Design mobile-first que funciona em todos os dispositivos- **Pagamento:** Único e vitalício  - Registro ilimitado de treinos
 
 # Preview do build de produção
 
@@ -150,7 +150,7 @@ pnpm run preview
 
 ```
 
-## 🚀 Recursos  - Histórico ilimitado de treinos
+## 🚀 Recursos- **Total:** R$ 24,90 (R$ 10 conta + R$ 14,90 upgrade)
 
 ## 🌐 Deploy na Hostinger
 
@@ -158,7 +158,7 @@ pnpm run preview
 
 ### Build e Upload
 
-- ✅ **Hero Section** - Primeira impressão impactante com CTAs  - Análises avançadas e estatísticas
+- ✅ **Hero Section** - Primeira impressão impactante com CTAs- **É um bônus!** Recursos extras para quem quiser:  - Biblioteca de exercícios completa
 
 ```bash
 
@@ -166,7 +166,7 @@ pnpm run preview
 
 pnpm run build
 
-- ✅ **Benefits** - 4 benefícios principais com estatísticas  - Templates personalizados ilimitados
+- ✅ **Benefits** - 4 benefícios principais com estatísticas  - Histórico ilimitado de treinos
 
 # 2. Os arquivos estarão em dist/
 
@@ -174,7 +174,7 @@ pnpm run build
 
 ```
 
-- ✅ **Testimonials** - Depoimentos de usuários (personalizável)  - Gráficos de progresso detalhados## 🚀 FeaturesThe React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ✅ **Testimonials** - Depoimentos de usuários (personalizável)  - Análises avançadas e estatísticas  - Templates básicos de treino
 
 ### Arquivos Importantes
 
@@ -182,7 +182,7 @@ pnpm run build
 
 - ✅ `.htaccess` - Configuração do servidor (já incluído em public/)
 
-- ✅ `DEPLOY-HOSTINGER.md` - Guia completo de deploy- ✅ **Contact** - WhatsApp + Email + FAQ  - Exportação de dados
+- ✅ `DEPLOY-HOSTINGER.md` - Guia completo de deploy- ✅ **Contact** - WhatsApp + Email + FAQ  - Templates personalizados ilimitados
 
 - ✅ `build-deploy.sh` - Script helper para build
 
@@ -190,11 +190,209 @@ pnpm run build
 
 ### Checklist de Deploy
 
-- ✅ **CTA Modal** - Captura de leads para notificação de lançamento  - Suporte prioritário
+- ✅ **CTA Modal** - Captura para criação de conta  - Gráficos de progresso detalhados  - Histórico de 30 dias- **Dark Theme:** Primary dark background (#1a1a1a) with green accent (#27AE60)- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
 
 - [ ] Executar `pnpm run build`
 
+- [ ] Limpar `public_html/` na Hostinger- ✅ **Premium Modal** - Instruções de upgrade
+
+- [ ] Upload de todos os arquivos de `dist/`
+
+- [ ] Verificar se `.htaccess` foi enviado- ✅ **SEO Optimizado** - Meta tags, Open Graph, Twitter Cards  - Exportação de dados
+
+- [ ] Ativar SSL/HTTPS no painel
+
+- [ ] Testar no navegador
+
+- [ ] Testar no mobile
+
+## 🛠️ Tech Stack  - Suporte prioritário  - Modo offline
+
+**📚 Veja o guia completo:** [DEPLOY-HOSTINGER.md](./DEPLOY-HOSTINGER.md)
+
+
+
+## 📝 Personalização
+
+- **React 19** - Última versão do React  - Sem anúncios
+
+### Como Editar Depoimentos
+
+- **TypeScript** - Segurança de tipos
+
+Veja o guia completo em: **[COMO_EDITAR_DEPOIMENTOS.md](./COMO_EDITAR_DEPOIMENTOS.md)**
+
+- **Vite 7** - Build tool rápido- **Premium Styling:** Gold gradient for premium features (#F59E0B to #D97706)- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+Resumo rápido:
+
+1. Abra `src/components/Testimonials.tsx`- **Tailwind CSS v3** - Estilização utility-first
+
+2. Edite o array `testimonials`
+
+3. Adicione/remova/edite depoimentos conforme necessário- **Lucide React** - Ícones lindos**💡 R$ 10 = Conta completa vitalícia | Premium = Opcional para quem quer mais!**
+
+
+
+Exemplo:- **pnpm** - Gerenciador de pacotes
+
+```typescript
+
+{### Premium - R$ 14,90
+
+  name: 'Seu Nome',
+
+  role: 'Sua Profissão',## 📦 Instalação
+
+  avatar: '💪', // Emoji
+
+  rating: 5,## 🎨 Design
+
+  text: 'Seu depoimento aqui...'
+
+}```bash
+
+```
+
+# Instalar dependências- **Pagamento:** Único e vitalício (upgrade permanente) ✅- **Glassmorphism:** Beautiful backdrop-blur effects
+
+### Configurações de Contato
+
+pnpm install
+
+Edite os seguintes arquivos:
+
+- **Dark Theme:** Background escuro (#1a1a1a) com verde accent (#27AE60)
+
+**Contact.tsx:**
+
+- WhatsApp: `https://wa.me/5511999999999`# Rodar servidor de desenvolvimento
+
+- Email: `contato@trainlog.app`
+
+pnpm run dev- **Premium Styling:** Gradiente dourado para recursos premium (#F59E0B to #D97706)- **Total:** R$ 24,90 (R$ 10 básico + R$ 14,90 upgrade)
+
+**Modais:**
+
+- CTAModal.tsx - Direciona para `app.trainlog.site`
+
+- PremiumModal.tsx - Instruções de upgrade no perfil
+
+# Build para produção- **Glassmorphism:** Efeitos de backdrop-blur
+
+## 🎯 Seções
+
+pnpm run build
+
+1. **Header** - Navegação fixa com scroll suave
+
+2. **Hero** - Proposta de valor principal com CTAs- **Responsive:** Design mobile-first que funciona em todos os dispositivos- **Benefícios adicionais:**- **Responsive:** Mobile-first design that works on all devices## React Compiler
+
+3. **Features** - Grid de 8 recursos
+
+4. **Benefits** - 4 benefícios principais com estatísticas# Preview do build de produção
+
+5. **How It Works** - Processo passo a passo
+
+6. **Testimonials** - Depoimentos de usuáriospnpm run preview
+
+7. **Premium** - Comparação de preços (Conta vs Premium)
+
+8. **Contact** - WhatsApp + Email com FAQ```
+
+9. **Footer** - Links, redes sociais, legal
+
+## 🚀 Recursos  - Histórico ilimitado de treinos
+
+## 🎨 Paleta de Cores
+
+## 🌐 Deploy na Hostinger
+
+```css
+
+Verde Primary: #27AE60
+
+Verde Dark: #1e8449
+
+Verde Light: #2ecc71### Build e Upload
+
+Premium From: #F59E0B
+
+Premium To: #D97706- ✅ **Hero Section** - Primeira impressão impactante com CTAs  - Análises avançadas e estatísticas
+
+Background: #1a1a1a
+
+Card: #2a2a2a```bash
+
+Lighter: #3a3a3a
+
+```# 1. Fazer build de produção- ✅ **Features Grid** - 8 recursos principais com ícones
+
+
+
+## 📱 PWA Readypnpm run build
+
+
+
+A landing page está pronta para PWA com:- ✅ **Benefits** - 4 benefícios principais com estatísticas  - Templates personalizados ilimitados
+
+- Manifest configurado
+
+- Ícones para todos os dispositivos# 2. Os arquivos estarão em dist/
+
+- Theme color definida
+
+- Meta tags para mobile# 3. Faça upload de TODO o conteúdo de dist/ para public_html/- ✅ **How It Works** - Processo em 4 passos
+
+
+
+## 📄 SEO Keywords```
+
+
+
+- app de treino- ✅ **Testimonials** - Depoimentos de usuários (personalizável)  - Gráficos de progresso detalhados## 🚀 FeaturesThe React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+- diário de academia
+
+- planilha de treino### Arquivos Importantes
+
+- treino fitness
+
+- musculação- ✅ **Premium Pricing** - Comparação Conta vs Premium
+
+- academia
+
+- progressive web app- ✅ `.htaccess` - Configuração do servidor (já incluído em public/)
+
+- treino offline
+
+- ✅ `DEPLOY-HOSTINGER.md` - Guia completo de deploy- ✅ **Contact** - WhatsApp + Email + FAQ  - Exportação de dados
+
+## 🔧 Requisitos
+
+- ✅ `build-deploy.sh` - Script helper para build
+
+- **Node.js:** 20.19+ ou 22.12+ (recomendado: 22.20.0)
+
+- **pnpm:** 10.x- ✅ **Footer** - Links e redes sociais
+
+- **Vite:** 7.1.9
+
+### Checklist de Deploy
+
+## 📝 Licença
+
+- ✅ **CTA Modal** - Captura de leads para notificação de lançamento  - Suporte prioritário
+
+© 2025 TrainLog. Todos os direitos reservados.
+
+- [ ] Executar `pnpm run build`
+
+---
+
 - [ ] Limpar `public_html/` na Hostinger- ✅ **SEO Optimizado** - Meta tags, Open Graph, Twitter Cards
+
+Feito com ❤️ para entusiastas de fitness brasileiros
 
 - [ ] Upload de todos os arquivos de `dist/`
 

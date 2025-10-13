@@ -44,7 +44,7 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
             Comece Sua Jornada <span className="text-gradient-premium">Hoje Mesmo</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            R$ 10 para criar sua conta + upgrade Premium opcional
+            R$ 14,90 para criar sua conta + upgrade Premium opcional
           </p>
         </div>
 
@@ -60,7 +60,7 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
             </div>
 
             <div className="mb-8">
-              <div className="text-4xl font-bold text-white mb-2">R$ 10,00</div>
+              <div className="text-4xl font-bold text-white mb-2">R$ 14,90</div>
               <div className="text-primary text-sm font-semibold">PAGAMENTO ÚNICO PARA CRIAR A CONTA</div>
               <div className="text-gray-400 mt-1">Acesso completo vitalício</div>
             </div>
@@ -78,7 +78,7 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
               onClick={onCtaClick}
               className="w-full bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-4 rounded-xl transition"
             >
-              Criar Conta - R$ 10
+              Criar Conta - R$ 14,90
             </button>
           </div>
 
@@ -104,10 +104,10 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
 
                 <div className="mb-8">
                   <div className="flex items-baseline gap-2 mb-2">
-                    <span className="text-4xl font-bold text-gradient-premium">R$ 14,90</span>
+                    <span className="text-4xl font-bold text-gradient-premium">R$ 9,90</span>
                   </div>
                   <div className="text-sm text-gray-400 mb-2">
-                    + R$ 10 da conta = <span className="font-bold text-white">R$ 24,90 total</span>
+                    + R$ 14,90 da conta = <span className="font-bold text-white">R$ 24,80 total</span>
                   </div>
                   <div className="text-primary text-sm font-semibold">UPGRADE ÚNICO VITALÍCIO</div>
                   <div className="text-amber-500 text-sm mt-1">💳 Opcional - só se você quiser mais recursos</div>
@@ -138,11 +138,11 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
           <p className="text-lg font-semibold text-white mb-3">Como Funciona:</p>
           <div className="grid md:grid-cols-2 gap-4 text-left">
             <div className="glass rounded-lg p-4 border border-gray-800">
-              <p className="font-semibold text-primary mb-2">1️⃣ Criar Conta (R$ 10)</p>
+              <p className="font-semibold text-primary mb-2">1️⃣ Criar Conta (R$ 14,90)</p>
               <p className="text-sm">Pagamento único para criar sua conta no TrainLog. Acesso completo a todos os recursos padrão, para sempre.</p>
             </div>
             <div className="glass rounded-lg p-4 border border-gray-800">
-              <p className="font-semibold text-amber-500 mb-2">2️⃣ Premium (R$ 14,90) - Opcional</p>
+              <p className="font-semibold text-amber-500 mb-2">2️⃣ Premium (R$ 9,90) - Opcional</p>
               <p className="text-sm">Quer mais? Faça upgrade único para desbloquear recursos avançados. É opcional, só se você quiser!</p>
             </div>
           </div>
