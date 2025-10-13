@@ -14,6 +14,10 @@
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://app.trainlog.site" crossorigin />
     
+    <!-- Preload critical resources -->
+    <link rel="preload" as="style" href="/assets/index.css" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="/assets/index.css" /></noscript>
+    
     <!-- Primary Meta Tags -->
     <title>TrainLog - App de Treino para Academia | Rastreie Sua Evolução</title>
     <meta name="title" content="TrainLog - App de Treino para Academia | Rastreie Sua Evolução" />
@@ -23,6 +27,20 @@
     
     <!-- Theme Color -->
     <meta name="theme-color" content="#27AE60" />
+    
+    <!-- Critical CSS - Inline for immediate render -->
+    <style>
+      /* Critical above-the-fold styles */
+      *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#3a3a3a}
+      html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,sans-serif}
+      body{margin:0;line-height:inherit;background-color:#1a1a1a;color:#fff}
+      #root{min-height:100vh}
+      /* Prevent layout shift */
+      .hero-section{min-height:100vh;display:flex;align-items:center}
+      /* Loading skeleton to prevent CLS */
+      .skeleton{background:linear-gradient(90deg,#2a2a2a 25%,#3a3a3a 50%,#2a2a2a 75%);animation:shimmer 2s infinite}
+      @keyframes shimmer{0%{background-position:-1000px 0}100%{background-position:1000px 0}}
+    </style>
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />

@@ -3,7 +3,9 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+  ],
   
   build: {
     // Reduce chunk size for better loading
@@ -14,6 +16,10 @@ export default defineConfig({
           'react-vendor': ['react', 'react-dom'],
           'icons': ['lucide-react'],
         },
+        // Add async/defer attributes
+        entryFileNames: 'assets/[name]-[hash].js',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]',
       },
     },
     
@@ -31,6 +37,14 @@ export default defineConfig({
     
     // Optimize assets
     assetsInlineLimit: 4096, // Inline assets smaller than 4kb
+    
+    // Target modern browsers for smaller bundle
+    target: 'es2015',
+    
+    // Enable module preload for faster loading
+    modulePreload: {
+      polyfill: false, // Don't include polyfill if targeting modern browsers
+    },
   },
   
   // Optimize dependencies
