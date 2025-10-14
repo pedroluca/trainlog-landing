@@ -62,10 +62,10 @@ const Contact: React.FC = () => {
               <h4 className="text-lg font-semibold text-white mb-2">Como funciona o pagamento?</h4>
               <p className="text-gray-400">R$ 14,90 pagamento único para criar sua conta e ter acesso completo. O Premium (R$ 9,90) é um upgrade opcional com recursos extras, também pagamento único.</p>
             </div>
-            <div>
+            {/* <div>
               <h4 className="text-lg font-semibold text-white mb-2">O app funciona offline?</h4>
               <p className="text-gray-400">Sim! Como PWA, o TrainLog funciona completamente offline. Seus dados sincronizam automaticamente quando você volta a ter conexão.</p>
-            </div>
+            </div> */}
             <div>
               <h4 className="text-lg font-semibold text-white mb-2">Meus dados estão seguros?</h4>
               <p className="text-gray-400">Totalmente! Usamos Firebase, uma plataforma do Google, garantindo máxima segurança e privacidade dos seus dados.</p>

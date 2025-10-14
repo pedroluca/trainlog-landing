@@ -40,10 +40,6 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
                 <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />
                 <span className="text-gray-200">Templates prontos (Push/Pull/Legs e mais)</span>
               </div>
-              <div className="flex items-center gap-3">
-                <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />
-                <span className="text-gray-200">Funciona offline - sempre disponível</span>
-              </div>
             </div>
 
             {/* CTA Buttons */}
@@ -69,7 +65,6 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
                 <span>100% PWA</span>
               </div>
               <div>•</div>
-              <div>Funciona Offline</div>
               <div>•</div>
               <div>Dados Seguros</div>
             </div>
@@ -83,15 +78,6 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
               
               {/* Real App Screenshot */}
               <div className="absolute inset-0 overflow-hidden">
-                {/* 
-                  TODO: Add your real TrainLog screenshot here
-                  1. Take a screenshot from app.trainlog.site
-                  2. Save as: public/app-screenshot.png or .jpg
-                  3. Recommended size: 1080x2340px (9:19.5 ratio)
-                  4. Uncomment the img tag below
-                */}
-                
-                {/* OPTION 1: Use real screenshot (recommended) */}
                 <img 
                   src={AppScreenshot} 
                   alt="TrainLog App Screenshot" 

@@ -66,7 +66,6 @@ const Benefits: React.FC = () => {
           </div>
           <div className="text-center">
             <div className="text-4xl md:text-5xl font-bold text-primary mb-2">PWA</div>
-            <div className="text-gray-400">Funciona Offline</div>
           </div>
           <div className="text-center">
             <div className="text-4xl md:text-5xl font-bold text-primary mb-2">∞</div>

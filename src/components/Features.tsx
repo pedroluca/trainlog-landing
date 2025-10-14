@@ -5,7 +5,6 @@ import {
   Calendar, 
   BookOpen, 
   Award, 
-  Zap,
   BarChart3,
   Cloud
 } from 'lucide-react';
@@ -47,11 +46,6 @@ const Features: React.FC = () => {
       title: 'Sincronização na Nuvem',
       description: 'Seus dados sempre seguros e acessíveis de qualquer dispositivo.'
     },
-    {
-      icon: <Zap className="w-8 h-8" />,
-      title: 'Modo Offline',
-      description: 'Continue registrando seus treinos mesmo sem conexão. Sincroniza automaticamente depois.'
-    }
   ];
 
   return (
