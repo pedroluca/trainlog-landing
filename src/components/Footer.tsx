@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dumbbell, Instagram, Twitter, Youtube } from 'lucide-react';
+import { Dumbbell, Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -19,13 +19,13 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/trainlog.app/"
                 className="bg-dark-card hover:bg-dark-lighter p-2 rounded-lg transition text-gray-400 hover:text-primary"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="bg-dark-card hover:bg-dark-lighter p-2 rounded-lg transition text-gray-400 hover:text-primary"
                 aria-label="Twitter"
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
                 aria-label="YouTube"
               >
                 <Youtube className="w-5 h-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
