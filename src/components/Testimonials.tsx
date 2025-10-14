@@ -1,5 +1,5 @@
-import React from 'react';
-import { Star, Quote } from 'lucide-react';
+import React from 'react'
+import { Star, Quote } from 'lucide-react'
 
 const Testimonials: React.FC = () => {
   // ============================================
@@ -21,26 +21,12 @@ const Testimonials: React.FC = () => {
       text: 'O sistema é ótimo, fácil, prático e dinâmico.'
     },
     {
-      name: 'Ana Paula',
-      role: 'Personal Trainer',
+      name: 'Tharlis Fábio',
+      role: 'Web Designer',
       avatar: '🏋️‍♀️',
       rating: 5,
-      text: 'Recomendo para todos meus alunos. A forma como o app organiza os treinos e mostra o progresso é perfeita para manter o foco.'
+      text: 'Curti demais o sistema. Dá pra anotar os treinos rapidinho, salvar tudo e ainda usar o timer pra controlar os intervalos. Fica bem mais fácil manter a sequência e ver o que já foi feito. É simples de usar e funciona certinho, muito prático pra quem treina.'
     },
-    {
-      name: 'João Pedro',
-      role: 'Atleta Amador',
-      avatar: '🎯',
-      rating: 5,
-      text: 'Já testei vários apps de treino e o TrainLog é de longe o mais completo e fácil de usar. O modo offline é essencial!'
-    },
-    {
-      name: 'Mariana Costa',
-      role: 'Iniciante',
-      avatar: '🌟',
-      rating: 5,
-      text: 'Como iniciante, os templates prontos me ajudaram muito. Em 3 meses já vi resultados incríveis acompanhando tudo pelo app!'
-    }
     // Adicione mais depoimentos copiando o formato acima:
     // {
     //   name: 'Seu Nome Aqui',
@@ -49,7 +35,7 @@ const Testimonials: React.FC = () => {
     //   rating: 5,
     //   text: 'Seu depoimento aqui...'
     // },
-  ];
+  ]
 
   return (
     <section className="py-20 px-4 bg-dark-card">
@@ -113,7 +99,7 @@ const Testimonials: React.FC = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Testimonials;
+export default Testimonials
