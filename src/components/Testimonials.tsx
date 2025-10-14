@@ -2,15 +2,8 @@ import React from 'react'
 import { Star, Quote } from 'lucide-react'
 
 const Testimonials: React.FC = () => {
-  // ============================================
-  // 📝 PERSONALIZE OS DEPOIMENTOS AQUI!
-  // ============================================
-  // Para cada depoimento, edite:
-  // - name: Nome completo do usuário
-  // - role: Profissão ou descrição (ex: "Personal Trainer", "Estudante", "Crossfiteiro")
+  const TOTAL_USERS = 22 
   // - avatar: Emoji que representa o usuário (💪 🏋️‍♀️ 🎯 🌟 🔥 💯 ⚡ 🏆 etc)
-  // - rating: Número de estrelas (1 a 5)
-  // - text: O depoimento completo do usuário
   
   const testimonials = [
     {
@@ -93,7 +86,7 @@ const Testimonials: React.FC = () => {
               <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-sm">⭐</div>
             </div>
             <span className="text-gray-300">
-              <span className="font-bold text-white">500+</span> atletas já estão treinando melhor
+              <span className="font-bold text-white">{TOTAL_USERS}+</span> atletas já estão treinando melhor
             </span>
           </div>
         </div>

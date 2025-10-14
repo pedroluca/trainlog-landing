@@ -6,7 +6,7 @@ const HowItWorks: React.FC = () => {
     {
       icon: <UserPlus className="w-10 h-10" />,
       title: 'Crie Sua Conta',
-      description: 'Cadastre-se gratuitamente em segundos. Sem cartão de crédito necessário.'
+      description: 'Cadastre-se por apenas R$ 14,90 e tenha acesso vitalício ao app completo.'
     },
     {
       icon: <Dumbbell className="w-10 h-10" />,
@@ -75,7 +75,7 @@ const HowItWorks: React.FC = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="bg-primary hover:bg-primary-dark text-white font-bold px-8 py-4 rounded-xl transition shadow-lg shadow-primary/30"
           >
-            Começar Agora - É Grátis
+            Criar Conta - R$ 14,90
           </button>
         </div>
       </div>
