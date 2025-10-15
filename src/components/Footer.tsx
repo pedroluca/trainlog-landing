@@ -109,7 +109,15 @@ const Footer: React.FC = () => {
             © {currentYear} TrainLog. Todos os direitos reservados.
           </p>
           <p className="text-gray-400 text-sm">
-            Feito com ❤️ para atletas brasileiros
+            Desenvolvido por{' '}
+            <a
+              href="https://pedroluca.dev.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary underline hover:text-primary/80"
+            >
+              Pedro Luca Prates
+            </a>
           </p>
         </div>
       </div>
