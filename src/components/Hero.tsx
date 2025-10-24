@@ -65,7 +65,6 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
                 <span>100% PWA</span>
               </div>
               <div>•</div>
-              <div>•</div>
               <div>Dados Seguros</div>
             </div>
           </div>

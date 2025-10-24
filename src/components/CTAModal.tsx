@@ -9,8 +9,14 @@ interface CTAModalProps {
 const CTAModal: React.FC<CTAModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
-  const handleAccessApp = () => {
+
+  const handleAccessWebApp = () => {
     window.open('https://app.trainlog.site', '_blank');
+    onClose();
+  };
+
+  const handleDownloadApk = () => {
+    window.open('https://trainlog.site/download/TrainLog.apk', '_blank');
     onClose();
   };
 
@@ -29,44 +35,38 @@ const CTAModal: React.FC<CTAModalProps> = ({ isOpen, onClose }) => {
             <span className="text-4xl">💪</span>
           </div>
 
+
           <h2 className="text-3xl font-bold text-white mb-4">
-            Criar Sua Conta
+            Acesse o TrainLog
           </h2>
 
           <p className="text-gray-400 mb-6">
-            Para começar a usar o TrainLog, você precisa criar sua conta no app.
+            Agora você pode acessar o app diretamente pelo navegador (PWA) <b>ou</b> baixar o APK para Android.
           </p>
 
+
           <div className="bg-dark-bg border border-gray-700 rounded-xl p-6 mb-6 text-left">
-            <h3 className="text-lg font-bold text-white mb-3">📋 Como funciona:</h3>
-            <ol className="space-y-2 text-gray-300">
-              <li className="flex items-start">
-                <span className="text-primary font-bold mr-2">1.</span>
-                <span>Acesse o app e faça seu cadastro</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary font-bold mr-2">2.</span>
-                <span>Efetue o pagamento de <strong className="text-white">R$ 14,90</strong> via PIX</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary font-bold mr-2">3.</span>
-                <span>Aguarde a aprovação (rápida!)</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary font-bold mr-2">4.</span>
-                <span>Pronto! Sua conta vitalícia está ativa 🎉</span>
-              </li>
-            </ol>
+            <h3 className="text-lg font-bold text-white mb-3">📋 Escolha uma opção:</h3>
+            <div className="flex flex-col gap-3">
+              <button
+                onClick={handleAccessWebApp}
+                className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3 rounded-lg transition"
+              >
+                Acessar via WebApp (PWA)
+              </button>
+              <button
+                onClick={handleDownloadApk}
+                className="w-full bg-dark-card border border-primary text-primary font-bold py-3 rounded-lg transition hover:bg-primary/10"
+              >
+                Baixar APK para Android
+              </button>
+            </div>
+            <p className="text-xs text-gray-500 mt-4">
+              O WebApp funciona em qualquer dispositivo. O APK é exclusivo para Android.
+            </p>
           </div>
 
-          <button
-            onClick={handleAccessApp}
-            className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 rounded-lg transition mb-4"
-          >
-            Acessar o App
-          </button>
-
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-500 text-center">
             🔒 Pagamento seguro via PIX • Acesso vitalício
           </p>
         </div>
