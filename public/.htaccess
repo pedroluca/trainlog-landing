@@ -145,3 +145,7 @@ AddDefaultCharset UTF-8
 
 # Error pages (optional)
 # ErrorDocument 404 /index.html
+
+# Redireciona /download para o arquivo APK
+RewriteEngine On
+RewriteRule ^download/?$ /download/TrainLog.apk [L,R=302]
