@@ -44,7 +44,7 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
             Comece Sua Jornada <span className="text-gradient-premium">Hoje Mesmo</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            R$ 14,90 para criar sua conta + upgrade Premium opcional
+            Conta gratuita + upgrade Premium opcional por R$ 9,90
           </p>
         </div>
 
@@ -54,15 +54,15 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
             <div className="flex items-center gap-3 mb-6">
               <Zap className="w-8 h-8 text-primary" />
               <div>
-                <h3 className="text-2xl font-bold text-white">Conta Padrão</h3>
+                <h3 className="text-2xl font-bold text-white">Conta Gratuita</h3>
                 <p className="text-gray-400">Tudo que você precisa</p>
               </div>
             </div>
 
             <div className="mb-8">
-              <div className="text-4xl font-bold text-white mb-2">R$ 14,90</div>
-              <div className="text-primary text-sm font-semibold">PAGAMENTO ÚNICO PARA CRIAR A CONTA</div>
-              <div className="text-gray-400 mt-1">Acesso completo vitalício</div>
+              <div className="text-4xl font-bold text-primary mb-2">Grátis</div>
+              <div className="text-primary text-sm font-semibold">CADASTRO 100% GRATUITO</div>
+              <div className="text-gray-400 mt-1">Acesso completo para sempre</div>
             </div>
 
             <ul className="space-y-4 mb-8">
@@ -78,7 +78,7 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
               onClick={onCtaClick}
               className="w-full bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-4 rounded-xl transition"
             >
-              Criar Conta - R$ 14,90
+              Começar Grátis
             </button>
           </div>
 
@@ -105,9 +105,6 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
                 <div className="mb-8">
                   <div className="flex items-baseline gap-2 mb-2">
                     <span className="text-4xl font-bold text-gradient-premium">R$ 9,90</span>
-                  </div>
-                  <div className="text-sm text-gray-400 mb-2">
-                    + R$ 14,90 da conta = <span className="font-bold text-white">R$ 24,80 total</span>
                   </div>
                   <div className="text-primary text-sm font-semibold">UPGRADE ÚNICO VITALÍCIO</div>
                   <div className="text-amber-500 text-sm mt-1">💳 Opcional - só se você quiser mais recursos</div>
@@ -138,16 +135,16 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
           <p className="text-lg font-semibold text-white mb-3">Como Funciona:</p>
           <div className="grid md:grid-cols-2 gap-4 text-left">
             <div className="glass rounded-lg p-4 border border-gray-800">
-              <p className="font-semibold text-primary mb-2">1️⃣ Criar Conta (R$ 14,90)</p>
-              <p className="text-sm">Pagamento único para criar sua conta no TrainLog. Acesso completo a todos os recursos padrão, para sempre.</p>
+              <p className="font-semibold text-primary mb-2">1️⃣ Conta Gratuita</p>
+              <p className="text-sm">Crie sua conta gratuitamente e tenha acesso completo a todos os recursos padrão, para sempre. Sem custo!</p>
             </div>
             <div className="glass rounded-lg p-4 border border-gray-800">
               <p className="font-semibold text-amber-500 mb-2">2️⃣ Premium (R$ 9,90) - Opcional</p>
               <p className="text-sm">Quer mais? Faça upgrade único para desbloquear recursos avançados. É opcional, só se você quiser!</p>
             </div>
           </div>
-          <p className="mt-4">💡 Pagamentos via PIX com aprovação rápida por WhatsApp</p>
-          <p className="mt-2 font-semibold text-white">Sem mensalidades! Pague uma vez e use para sempre! 🎉</p>
+          <p className="mt-4">💡 Upgrade Premium via PIX com aprovação rápida por WhatsApp</p>
+          <p className="mt-2 font-semibold text-white">Conta grátis para sempre! Premium sem mensalidade! 🎉</p>
         </div>
       </div>
 

@@ -23,7 +23,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
               Transforme Seus <span className="text-primary">Treinos</span> em Resultados
             </h1>
             <p className="text-xl text-gray-300 mb-8">
-              O app completo para rastrear sua evolução na academia, gerenciar treinos e alcançar seus objetivos fitness. Por apenas R$ 14,90!
+              O app completo para rastrear sua evolução na academia, gerenciar treinos e alcançar seus objetivos fitness. Cadastre-se gratuitamente!
             </p>
 
             {/* Key benefits */}
@@ -48,13 +48,13 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
                 onClick={onCtaClick}
                 className="bg-primary hover:bg-primary-dark text-white font-bold px-8 py-4 rounded-xl transition text-lg shadow-lg shadow-primary/30"
               >
-                Criar Conta - R$ 14,90
+                Começar Grátis
               </button>
               <button
                 onClick={() => document.getElementById('premium')?.scrollIntoView({ behavior: 'smooth' })}
                 className="glass border border-gray-700 hover:border-primary text-white font-semibold px-8 py-4 rounded-xl transition text-lg"
               >
-                Ver Planos e Preços
+                Ver Premium
               </button>
             </div>
 
@@ -121,7 +121,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
 
             {/* Floating badge */}
             <div className="absolute -top-4 -right-4 bg-primary text-white px-6 py-3 rounded-xl shadow-xl font-bold">
-              R$ 14,90 vitalício
+              100% Grátis
             </div>
           </div>
         </div>

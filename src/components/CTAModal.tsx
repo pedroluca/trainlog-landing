@@ -41,12 +41,12 @@ const CTAModal: React.FC<CTAModalProps> = ({ isOpen, onClose }) => {
           </h2>
 
           <p className="text-gray-400 mb-6">
-            Agora você pode acessar o app diretamente pelo navegador (PWA) <b>ou</b> baixar o APK para Android.
+            Crie sua conta <b>gratuitamente</b> e comece a treinar melhor hoje mesmo! Escolha como acessar:
           </p>
 
 
           <div className="bg-dark-bg border border-gray-700 rounded-xl p-6 mb-6 text-left">
-            <h3 className="text-lg font-bold text-white mb-3">📋 Escolha uma opção:</h3>
+            <h3 className="text-lg font-bold text-white mb-3">� Escolha uma opção:</h3>
             <div className="flex flex-col gap-3">
               <button
                 onClick={handleAccessWebApp}
@@ -67,7 +67,7 @@ const CTAModal: React.FC<CTAModalProps> = ({ isOpen, onClose }) => {
           </div>
 
           <p className="text-sm text-gray-500 text-center">
-            🔒 Pagamento seguro via PIX • Acesso vitalício
+            ✨ Cadastro 100% gratuito • Acesso vitalício
           </p>
         </div>
       </div>

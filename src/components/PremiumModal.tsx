@@ -68,7 +68,7 @@ const PremiumModal: React.FC<PremiumModalProps> = ({ isOpen, onClose }) => {
 
           <div className="bg-gradient-premium/10 border border-amber-500/30 rounded-lg p-4 mb-6">
             <p className="text-sm text-gray-300">
-              💡 <strong className="text-white">Ainda não tem conta?</strong> Crie primeiro por R$ 14,90 e depois faça o upgrade quando quiser!
+              💡 <strong className="text-white">Ainda não tem conta?</strong> Crie gratuitamente e depois faça o upgrade quando quiser!
             </p>
           </div>
 

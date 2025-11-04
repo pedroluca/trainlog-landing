@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
           <div className="space-y-6">
             <div>
               <h4 className="text-lg font-semibold text-white mb-2">Como funciona o pagamento?</h4>
-              <p className="text-gray-400">R$ 14,90 pagamento único para criar sua conta e ter acesso completo. O Premium (R$ 9,90) é um upgrade opcional com recursos extras, também pagamento único.</p>
+              <p className="text-gray-400">A conta é 100% gratuita! Se você quiser recursos avançados, pode fazer upgrade para Premium por R$ 9,90 (pagamento único), totalmente opcional.</p>
             </div>
             {/* <div>
               <h4 className="text-lg font-semibold text-white mb-2">O app funciona offline?</h4>
@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
             </div>
             <div>
               <h4 className="text-lg font-semibold text-white mb-2">O Premium é obrigatório?</h4>
-              <p className="text-gray-400">Não! O Premium é totalmente opcional. Com R$ 14,90 você já tem acesso completo ao app. O Premium é só um bônus com recursos extras para quem quiser ainda mais.</p>
+              <p className="text-gray-400">Não! O Premium é totalmente opcional. Sua conta é 100% gratuita e já tem acesso completo ao app. O Premium é só um bônus com recursos extras para quem quiser ainda mais.</p>
             </div>
           </div>
         </div>
