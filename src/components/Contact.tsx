@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-6">
           {/* WhatsApp */}
           <a
-            href="https://wa.me/5577936181281"
+            href="https://wa.me/5571982434416"
             target="_blank"
             rel="noopener noreferrer"
             className="glass rounded-2xl p-8 border border-gray-800 hover:border-primary transition group flex flex-col items-center text-center"
@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
           <div className="space-y-6">
             <div>
               <h4 className="text-lg font-semibold text-white mb-2">Como funciona o pagamento?</h4>
-              <p className="text-gray-400">A conta é 100% gratuita! Se você quiser recursos avançados, pode fazer upgrade para Premium por R$ 9,90 (pagamento único), totalmente opcional.</p>
+              <p className="text-gray-400">Se você quiser recursos avançados, pode fazer upgrade para Premium por R$ 9,90 (pagamento único via PIX).</p>
             </div>
             {/* <div>
               <h4 className="text-lg font-semibold text-white mb-2">O app funciona offline?</h4>
@@ -71,8 +71,8 @@ const Contact: React.FC = () => {
               <p className="text-gray-400">Totalmente! Usamos Firebase, uma plataforma do Google, garantindo máxima segurança e privacidade dos seus dados.</p>
             </div>
             <div>
-              <h4 className="text-lg font-semibold text-white mb-2">O Premium é obrigatório?</h4>
-              <p className="text-gray-400">Não! O Premium é totalmente opcional. Sua conta é 100% gratuita e já tem acesso completo ao app. O Premium é só um bônus com recursos extras para quem quiser ainda mais.</p>
+              <h4 className="text-lg font-semibold text-white mb-2">O que o Premium oferece a mais?</h4>
+              <p className="text-gray-400">Sua conta é 100% gratuita e fornece todos os recursos essenciais. O Premium é pensado como um complemento para quem deseja ferramentas mais robustas, uma experiência personalizada e também para apoiar a continuidade do projeto.</p>
             </div>
           </div>
         </div>

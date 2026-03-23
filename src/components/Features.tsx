@@ -6,7 +6,8 @@ import {
   BookOpen, 
   Award, 
   BarChart3,
-  Cloud
+  Cloud,
+  Users
 } from 'lucide-react';
 
 const Features: React.FC = () => {
@@ -40,6 +41,11 @@ const Features: React.FC = () => {
       icon: <BarChart3 className="w-8 h-8" />,
       title: 'Métricas Corporais',
       description: 'Registre peso, percentual de gordura e medidas do corpo ao longo do tempo.'
+    },
+    {
+      icon: <Users className="w-8 h-8" />,
+      title: 'Perfil Social e Amigos',
+      description: 'Acompanhe as atividades dos seus amigos, compartilhe seus treinos e tenha controle total sobre sua privacidade.'
     },
     {
       icon: <Cloud className="w-8 h-8" />,

@@ -46,7 +46,7 @@ const CTAModal: React.FC<CTAModalProps> = ({ isOpen, onClose }) => {
 
 
           <div className="bg-dark-bg border border-gray-700 rounded-xl p-6 mb-6 text-left">
-            <h3 className="text-lg font-bold text-white mb-3">� Escolha uma opção:</h3>
+            <h3 className="text-lg font-bold text-white mb-3">👇 Escolha uma opção:</h3>
             <div className="flex flex-col gap-3">
               <button
                 onClick={handleAccessWebApp}
@@ -58,7 +58,7 @@ const CTAModal: React.FC<CTAModalProps> = ({ isOpen, onClose }) => {
                 onClick={handleDownloadApk}
                 className="w-full bg-dark-card border border-primary text-primary font-bold py-3 rounded-lg transition hover:bg-primary/10"
               >
-                Baixar APK para Android
+                Baixar para Android
               </button>
             </div>
             <p className="text-xs text-gray-500 mt-4">

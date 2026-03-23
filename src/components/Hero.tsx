@@ -121,13 +121,13 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
 
             {/* Floating badge */}
             <div className="absolute -top-4 -right-4 bg-primary text-white px-6 py-3 rounded-xl shadow-xl font-bold">
-              100% Grátis
+              Gratuito
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

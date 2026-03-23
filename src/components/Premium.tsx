@@ -13,19 +13,19 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
     'Registro ilimitado de treinos',
     'Biblioteca de exercícios completa',
     'Templates básicos de treino',
-    'Histórico de 30 dias',
+    'Histórico de 7 dias nas atividades',
     'Modo offline',
   ];
 
   const premiumFeatures = [
     'TUDO da conta padrão',
     'Histórico ilimitado de treinos',
+    'Acesso total ao Feed de amigos',
+    'Selo Premium exclusivo',
+    'Controles de privacidade avançados',
     'Análises avançadas e estatísticas',
-    // 'Templates personalizados ilimitados',
     'Gráficos de progresso detalhados',
-    // 'Exportação de dados',
     'Suporte prioritário',
-    // 'Sem anúncios',
   ];
 
   return (
@@ -44,7 +44,7 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
             Comece Sua Jornada <span className="text-gradient-premium">Hoje Mesmo</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Conta gratuita + upgrade Premium opcional por R$ 9,90
+            Conta padrão gratuita + pacote Premium com recursos exclusivos por R$ 9,90
           </p>
         </div>
 
@@ -86,7 +86,7 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
           <div className="relative">
             {/* Popular badge */}
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-premium text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg z-10">
-              ⭐ UPGRADE OPCIONAL
+              ⭐ EXPERIÊNCIA COMPLETA
             </div>
 
             <div className="glass rounded-3xl p-8 border-2 border-amber-500 relative overflow-hidden">
@@ -106,8 +106,8 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
                   <div className="flex items-baseline gap-2 mb-2">
                     <span className="text-4xl font-bold text-gradient-premium">R$ 9,90</span>
                   </div>
-                  <div className="text-primary text-sm font-semibold">UPGRADE ÚNICO VITALÍCIO</div>
-                  <div className="text-amber-500 text-sm mt-1">💳 Opcional - só se você quiser mais recursos</div>
+                  <div className="text-primary text-sm font-semibold">UPGRADE ÚNICO E VITALÍCIO</div>
+                  <div className="text-amber-500 text-sm mt-1">💳 Complemente a sua experiência</div>
                 </div>
 
                 <ul className="space-y-4 mb-8">
@@ -135,12 +135,12 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
           <p className="text-lg font-semibold text-white mb-3">Como Funciona:</p>
           <div className="grid md:grid-cols-2 gap-4 text-left">
             <div className="glass rounded-lg p-4 border border-gray-800">
-              <p className="font-semibold text-primary mb-2">1️⃣ Conta Gratuita</p>
-              <p className="text-sm">Crie sua conta gratuitamente e tenha acesso completo a todos os recursos padrão, para sempre. Sem custo!</p>
+              <p className="font-semibold text-primary mb-2">1️⃣ Conta Padrão</p>
+              <p className="text-sm">Crie sua conta gratuitamente e tenha acesso a todos os recursos essenciais do app, para sempre. Sem custo!</p>
             </div>
             <div className="glass rounded-lg p-4 border border-gray-800">
-              <p className="font-semibold text-amber-500 mb-2">2️⃣ Premium (R$ 9,90) - Opcional</p>
-              <p className="text-sm">Quer mais? Faça upgrade único para desbloquear recursos avançados. É opcional, só se você quiser!</p>
+              <p className="font-semibold text-amber-500 mb-2">2️⃣ Premium (R$ 9,90) - Acesso Total</p>
+              <p className="text-sm">Potencialize seus resultados com ferramentas avançadas e apoie o desenvolvimento do projeto com um pagamento único!</p>
             </div>
           </div>
           <p className="mt-4">💡 Upgrade Premium via PIX com aprovação rápida por WhatsApp</p>
