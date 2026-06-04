@@ -19,7 +19,8 @@ import {
   X,
   type LucideIcon,
 } from 'lucide-react'
-import LogoWhite from './assets/logo-fill.png'
+import LogoWhite from './assets/LOGO SEM FUNDO - BRANCO.svg'
+import LogoBg from './assets/LOGO COM FUNDO - VERDE.png'
 import ScreenshotClear from './assets/progress-screen.png'
 import ScreenshotMain from './assets/train-screen.png'
 
@@ -196,7 +197,7 @@ function App() {
             onClick={() => scrollToSection('topo')}
             className="flex items-center gap-3 text-left"
           >
-            <img src={LogoWhite} alt="TrainLog" className="h-12 md:h-14 w-12 md:w-14" />
+            <img src={LogoBg} alt="TrainLog" className="h-12 md:h-14 w-12 md:w-14" />
             <div>
               <p className="text-lg font-bold tracking-tight text-white">TrainLog</p>
               <p className="text-xs text-white/50">Seu treino. Sua evolução.</p>
