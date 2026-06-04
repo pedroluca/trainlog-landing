@@ -115,9 +115,9 @@ const testimonials = [
     text: 'Curti demais o app. Dá pra anotar os treinos rapidinho, salvar tudo e ainda usar o timer pra controlar os intervalos. Fica bem mais fácil manter a sequência e ver o que já foi feito. É simples de usar e funciona certinho, muito prático pra quem treina.',
   },
   {
-    name: 'Lucas Oliveira',
-    role: 'Powerlifter',
-    text: 'Quando o app mostra PRs e volume de forma clara, a motivação sobe. O redesenho acertou exatamente esse ponto.',
+    name: 'Otávio Prates',
+    role: 'Videomaker',
+    text: 'O aplicativo é completo no quesito de acompanhamento durante os treinos, com o tempo de descanso exato, quantidade de séries e na própria formação de treinos e exercícios, recomendo para todos que querem uma melhor organização e cuidado com seus treinos!',
   },
 ]
 
@@ -245,8 +245,8 @@ function App() {
 
           <div className="relative mx-auto flex max-w-7xl flex-col items-center justify-center text-center">
             <div className="relative z-10 mx-auto max-w-3xl">
-              <h1 className="text-balance text-5xl font-black tracking-tight text-white sm:text-6xl lg:text-[5.5rem] lg:leading-[0.94]">
-                Seu treino.{' '}
+              <h1 className="text-balance text-5xl font-black tracking-tight text-white lg:text-6xl lg:leading-[0.94]">
+                Seu treino.<br />
                 <span className="bg-gradient-to-r from-emerald-300 via-[#27AE60] to-lime-300 bg-clip-text text-transparent">
                   Sua evolução.
                 </span>
