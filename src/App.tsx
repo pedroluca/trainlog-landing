@@ -593,7 +593,7 @@ function App() {
                   Disponível como Web App para iPhone e em acesso antecipado no Android.
                 </p>
 
-                <div className="mt-10 flex flex-col lg:flex-row items-stretch justify-center gap-8">
+                <div className="mt-10 flex flex-col lg:flex-row items-stretch md:items-center justify-center gap-8">
                   {/* Left: Abrir PWA */}
                   <a
                     href="https://app.trainlog.site"
