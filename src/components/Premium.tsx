@@ -10,22 +10,20 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
   const [isPremiumModalOpen, setIsPremiumModalOpen] = useState(false);
 
   const freeFeatures = [
+    'Tudo o que ja foi liberado continua no gratuito',
     'Registro ilimitado de treinos',
-    'Biblioteca de exercícios completa',
-    'Templates básicos de treino',
-    'Histórico de 7 dias nas atividades',
-    'Modo offline',
+    'Biblioteca completa de exercicios',
+    'Templates, historico e modo offline',
+    'Sem cartao e sem mensalidade',
   ];
 
   const premiumFeatures = [
-    'TUDO da conta padrão',
-    'Histórico ilimitado de treinos',
-    'Acesso total ao Feed de amigos',
-    'Selo Premium exclusivo',
-    'Controles de privacidade avançados',
-    'Análises avançadas e estatísticas',
-    'Gráficos de progresso detalhados',
-    'Suporte prioritário',
+    'Tudo do plano gratuito',
+    'Selo Premium e identidade exclusiva',
+    'Suporte prioritario e resposta mais rapida',
+    'Acesso antecipado a novidades Premium',
+    'Beneficios especiais para early adopters',
+    'Contribui diretamente com o desenvolvimento',
   ];
 
   return (
@@ -44,8 +42,27 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
             Comece Sua Jornada <span className="text-gradient-premium">Hoje Mesmo</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Conta padrão gratuita + pacote Premium com recursos exclusivos por R$ 9,90
+            O gratuito continua com tudo o que ja foi liberado. O Premium acrescenta beneficios hoje e reserva espaço para novidades futuras sem cortar nada do que existe.
           </p>
+        </div>
+
+        <div className="max-w-5xl mx-auto mb-8">
+          <div className="glass rounded-2xl border border-primary/20 p-4 md:p-5">
+            <div className="grid md:grid-cols-3 gap-3 text-sm">
+              <div className="rounded-xl border border-gray-700 bg-dark-card px-4 py-3">
+                <p className="text-primary font-semibold mb-1">Gratuito hoje</p>
+                <p className="text-gray-300">Base completa para treinar sem custo e sem limite no que ja foi liberado.</p>
+              </div>
+              <div className="rounded-xl border border-amber-500/30 bg-amber-500/5 px-4 py-3">
+                <p className="text-amber-400 font-semibold mb-1">Premium hoje</p>
+                <p className="text-gray-200">Identidade extra, prioridade de suporte e acesso antecipado ao que for exclusivo.</p>
+              </div>
+              <div className="rounded-xl border border-violet-500/30 bg-violet-500/5 px-4 py-3">
+                <p className="text-violet-300 font-semibold mb-1">Premium no futuro</p>
+                <p className="text-gray-200">Novos recursos mais avançados podem nascer como benefício Premium sem mexer no que já está no gratuito.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -55,14 +72,14 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
               <Zap className="w-8 h-8 text-primary" />
               <div>
                 <h3 className="text-2xl font-bold text-white">Conta Gratuita</h3>
-                <p className="text-gray-400">Tudo que você precisa</p>
+                <p className="text-gray-400">Tudo o que ja foi liberado fica aqui</p>
               </div>
             </div>
 
             <div className="mb-8">
               <div className="text-4xl font-bold text-primary mb-2">Grátis</div>
               <div className="text-primary text-sm font-semibold">CADASTRO 100% GRATUITO</div>
-              <div className="text-gray-400 mt-1">Acesso completo para sempre</div>
+              <div className="text-gray-400 mt-1">Sem limitar o que ja foi liberado</div>
             </div>
 
             <ul className="space-y-4 mb-8">
@@ -78,7 +95,7 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
               onClick={onCtaClick}
               className="w-full bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-4 rounded-xl transition"
             >
-              Começar Grátis
+              Comecar Gratis
             </button>
           </div>
 
@@ -86,7 +103,7 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
           <div className="relative">
             {/* Popular badge */}
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-premium text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg z-10">
-              ⭐ EXPERIÊNCIA COMPLETA
+              ⭐ PRIORIDADE + EXTRAS
             </div>
 
             <div className="glass rounded-3xl p-8 border-2 border-amber-500 relative overflow-hidden">
@@ -98,7 +115,7 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
                   <Crown className="w-8 h-8 text-amber-500" />
                   <div>
                     <h3 className="text-2xl font-bold text-white">Premium</h3>
-                    <p className="text-gray-400">Recursos avançados</p>
+                    <p className="text-gray-400">Exclusividade, prioridade e futuro</p>
                   </div>
                 </div>
 
@@ -106,8 +123,8 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
                   <div className="flex items-baseline gap-2 mb-2">
                     <span className="text-4xl font-bold text-gradient-premium">R$ 9,90</span>
                   </div>
-                  <div className="text-primary text-sm font-semibold">UPGRADE ÚNICO E VITALÍCIO</div>
-                  <div className="text-amber-500 text-sm mt-1">💳 Complemente a sua experiência</div>
+                  <div className="text-primary text-sm font-semibold">UPGRADE UNICO E VITALICIO</div>
+                  <div className="text-amber-500 text-sm mt-1">Beneficios premium sem assinatura mensal</div>
                 </div>
 
                 <ul className="space-y-4 mb-8">
@@ -135,16 +152,16 @@ const Premium: React.FC<PremiumProps> = ({ onCtaClick }) => {
           <p className="text-lg font-semibold text-white mb-3">Como Funciona:</p>
           <div className="grid md:grid-cols-2 gap-4 text-left">
             <div className="glass rounded-lg p-4 border border-gray-800">
-              <p className="font-semibold text-primary mb-2">1️⃣ Conta Padrão</p>
-              <p className="text-sm">Crie sua conta gratuitamente e tenha acesso a todos os recursos essenciais do app, para sempre. Sem custo!</p>
+              <p className="font-semibold text-primary mb-2">1) Plano Gratis Forte</p>
+              <p className="text-sm">Comece sem custo com a base completa ja liberada para o dia a dia dos treinos.</p>
             </div>
             <div className="glass rounded-lg p-4 border border-gray-800">
-              <p className="font-semibold text-amber-500 mb-2">2️⃣ Premium (R$ 9,90) - Acesso Total</p>
-              <p className="text-sm">Potencialize seus resultados com ferramentas avançadas e apoie o desenvolvimento do projeto com um pagamento único!</p>
+              <p className="font-semibold text-amber-500 mb-2">2) Premium (R$ 9,90) - Valor Extra</p>
+              <p className="text-sm">Entre como early adopter, receba beneficios exclusivos e prioridade nas proximas features premium.</p>
             </div>
           </div>
-          <p className="mt-4">💡 Upgrade Premium via PIX com aprovação rápida por WhatsApp</p>
-          <p className="mt-2 font-semibold text-white">Conta grátis para sempre! Premium sem mensalidade! 🎉</p>
+          <p className="mt-4">Upgrade Premium via PIX com aprovacao rapida por WhatsApp</p>
+          <p className="mt-2 font-semibold text-white">Conta gratis para sempre. Premium sem mensalidade.</p>
         </div>
       </div>
 

@@ -1,20 +1,21 @@
-import React from 'react';
-import { Menu, X, Dumbbell } from 'lucide-react';
+import React from 'react'
+import { Menu, X } from 'lucide-react'
+import LogoBranca from '../assets/logo-fill.png'
 
 interface HeaderProps {
-  onCtaClick: () => void;
+  onCtaClick: () => void
 }
 
 const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false)
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
+    const element = document.getElementById(id)
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
+      element.scrollIntoView({ behavior: 'smooth' })
+      setIsMenuOpen(false)
     }
-  };
+  }
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass border-b border-gray-800">
@@ -22,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <Dumbbell className="w-8 h-8 text-primary" />
+            <img src={LogoBranca} className="w-10 h-10" />
             <span className="text-2xl font-bold text-white">TrainLog</span>
           </div>
 
@@ -82,7 +83,7 @@ const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
         )}
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

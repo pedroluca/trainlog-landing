@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
             </div>
             <div>
               <h4 className="text-lg font-semibold text-white mb-2">O que o Premium oferece a mais?</h4>
-              <p className="text-gray-400">Sua conta é 100% gratuita e fornece todos os recursos essenciais. O Premium é pensado como um complemento para quem deseja ferramentas mais robustas, uma experiência personalizada e também para apoiar a continuidade do projeto.</p>
+              <p className="text-gray-400">Sua conta continua 100% gratuita com tudo o que ja foi liberado. O Premium entra como complemento para identidade extra, prioridade e futuros recursos avancados, sem remover nada do gratuito atual.</p>
             </div>
           </div>
         </div>

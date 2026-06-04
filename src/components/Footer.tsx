@@ -1,8 +1,9 @@
-import React from 'react';
-import { Dumbbell, Instagram } from 'lucide-react';
+import React from 'react'
+import { Instagram } from 'lucide-react'
+import LogoBranca from '../assets/logo-white.png'
 
 const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear()
 
   return (
     <footer className="bg-dark-bg border-t border-gray-800 py-12 px-4">
@@ -11,7 +12,7 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <Dumbbell className="w-8 h-8 text-primary" />
+              <img src={LogoBranca} className="w-10 h-10" />
               <span className="text-2xl font-bold text-white">TrainLog</span>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
@@ -122,7 +123,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
