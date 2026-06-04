@@ -119,6 +119,11 @@ const testimonials = [
     role: 'Videomaker',
     text: 'O aplicativo é completo no quesito de acompanhamento durante os treinos, com o tempo de descanso exato, quantidade de séries e na própria formação de treinos e exercícios, recomendo para todos que querem uma melhor organização e cuidado com seus treinos!',
   },
+  {
+    name: 'Maria Eduarda',
+    role: 'Tecnóloga em Agroindústria',
+    text: 'O aplicativo funciona muito bem para o proposto, sendo possível acompanhar meus treinos diariamente, contar o tempo de uso e acompanhar o progresso de peso. Posso acompanhar amigos e compartilhar meus treinos, o que é ótimo para manter a motivação. O design é simples e fácil de usar, o que torna a experiência agradável.',
+  },
 ]
 
 function SectionTitle({
