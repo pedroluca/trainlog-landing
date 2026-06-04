@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
 import { db, hasFirebaseConfig } from './firebase'
 import {
@@ -162,6 +162,7 @@ function App() {
   const [waitlistEmail, setWaitlistEmail] = useState('')
   const [waitlistError, setWaitlistError] = useState('')
   const [waitlistSuccess, setWaitlistSuccess] = useState('')
+  const testimonialsScrollerRef = useRef<HTMLDivElement | null>(null)
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
@@ -173,6 +174,19 @@ function App() {
   }
 
   const currentYear = new Date().getFullYear()
+
+  const scrollTestimonials = (direction: 'left' | 'right') => {
+    const container = testimonialsScrollerRef.current
+
+    if (!container) {
+      return
+    }
+
+    const amount = Math.max(280, Math.floor(container.clientWidth * 0.85))
+    const offset = direction === 'left' ? -amount : amount
+
+    container.scrollBy({ left: offset, behavior: 'smooth' })
+  }
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#080808] text-white selection:bg-[#27AE60]/30 selection:text-white">
@@ -398,25 +412,49 @@ function App() {
               accent="logo no primeiro olhar"
             />
 
-            <div className="mt-14 grid gap-5 lg:grid-cols-3">
-              {testimonials.map((testimonial) => (
-                <article
-                  key={testimonial.name}
-                  className="rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-7"
-                >
-                  <Quote className="h-8 w-8 text-emerald-300/70" />
-                  <div className="mt-5 flex gap-1 text-emerald-300">
-                    {Array.from({ length: 5 }).map((_, index) => (
-                      <Star key={index} className="h-4 w-4 fill-current" />
-                    ))}
-                  </div>
-                  <p className="mt-5 text-sm leading-7 text-white/68">{testimonial.text}</p>
-                  <div className="mt-7 border-t border-white/10 pt-5">
-                    <p className="font-semibold text-white">{testimonial.name}</p>
-                    <p className="text-sm text-white/50">{testimonial.role}</p>
-                  </div>
-                </article>
-              ))}
+            <div className="mt-8 flex items-center justify-end gap-3">
+              <button
+                type="button"
+                onClick={() => scrollTestimonials('left')}
+                aria-label="Ver depoimento anterior"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/12 bg-white/[0.03] text-white/70 transition hover:border-white/30 hover:text-white"
+              >
+                <ChevronRight className="h-5 w-5 rotate-180" />
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollTestimonials('right')}
+                aria-label="Ver próximo depoimento"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/12 bg-white/[0.03] text-white/70 transition hover:border-white/30 hover:text-white"
+              >
+                <ChevronRight className="h-5 w-5" />
+              </button>
+            </div>
+
+            <div
+              ref={testimonialsScrollerRef}
+              className="mt-6 -mx-4 overflow-x-auto px-4 pb-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            >
+              <div className="flex w-max snap-x snap-mandatory gap-5">
+                {testimonials.map((testimonial) => (
+                  <article
+                    key={testimonial.name}
+                    className="w-[86vw] max-w-md flex-none snap-start rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-7"
+                  >
+                    <Quote className="h-8 w-8 text-emerald-300/70" />
+                    <div className="mt-5 flex gap-1 text-emerald-300">
+                      {Array.from({ length: 5 }).map((_, index) => (
+                        <Star key={index} className="h-4 w-4 fill-current" />
+                      ))}
+                    </div>
+                    <p className="mt-5 text-sm leading-7 text-white/68">{testimonial.text}</p>
+                    <div className="mt-7 border-t border-white/10 pt-5">
+                      <p className="font-semibold text-white">{testimonial.name}</p>
+                      <p className="text-sm text-white/50">{testimonial.role}</p>
+                    </div>
+                  </article>
+                ))}
+              </div>
             </div>
           </div>
         </section>
