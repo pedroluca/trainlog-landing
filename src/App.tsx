@@ -697,7 +697,7 @@ function App() {
             <div className="mb-5 flex items-center gap-3">
               <img src={LogoWhite} className="h-10 w-10 rounded-xl" />
               <span className="text-2xl font-bold tracking-tight text-white">
-                Train<span className="text-[#27AE60]">Log</span>
+                Trac<span className="text-[#27AE60]">tus</span>
               </span>
             </div>
             <p className="max-w-xs text-sm leading-7 text-white/50">
