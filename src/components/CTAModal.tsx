@@ -33,7 +33,7 @@ const CTAModal: React.FC<CTAModalProps> = ({ isOpen, onClose }) => {
   };
 
   const handleDownloadApk = () => {
-    window.open('https://trainlog.site/download/TrainLog.apk', '_blank');
+    window.open('https://trainlog.site/download/Tractus.apk', '_blank');
     onClose();
   };
 
@@ -108,7 +108,7 @@ const CTAModal: React.FC<CTAModalProps> = ({ isOpen, onClose }) => {
             </div>
 
             <h2 className="text-3xl font-bold text-white mb-4">
-              Acesse o TrainLog
+              Acesse o Tractus
             </h2>
 
             <p className="text-gray-400 mb-6">

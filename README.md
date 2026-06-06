@@ -1,12 +1,12 @@
-# TrainLog Landing Page# TrainLog Landing Page# TrainLog Landing Page# TrainLog Landing Page# TrainLog Landing Page# React + TypeScript + Vite
+# Tractus Landing Page# Tractus Landing Page# Tractus Landing Page# Tractus Landing Page# Tractus Landing Page# React + TypeScript + Vite
 
 
 
-Landing page para TrainLog - o app completo de rastreamento de treinos fitness.
+Landing page para Tractus - o app completo de rastreamento de treinos fitness.
 
 
 
-## 💰 Modelo de PreçosLanding page para TrainLog - o app completo de rastreamento de treinos fitness.
+## 💰 Modelo de PreçosLanding page para Tractus - o app completo de rastreamento de treinos fitness.
 
 
 
@@ -14,7 +14,7 @@ Landing page para TrainLog - o app completo de rastreamento de treinos fitness.
 
 - **Pagamento:** Único para criar sua conta
 
-- **O que você ganha:**## 💰 Modelo de PreçosLanding page para TrainLog - o app completo de rastreamento de treinos fitness.
+- **O que você ganha:**## 💰 Modelo de PreçosLanding page para Tractus - o app completo de rastreamento de treinos fitness.
 
   - Acesso completo ao app
 
@@ -30,7 +30,7 @@ Landing page para TrainLog - o app completo de rastreamento de treinos fitness.
 
   - Uso vitalício
 
-- **O que você ganha:**## 💰 Modelo de PreçosLanding page para TrainLog - o app completo de rastreamento de treinos fitness.
+- **O que você ganha:**## 💰 Modelo de PreçosLanding page para Tractus - o app completo de rastreamento de treinos fitness.
 
 ### Premium - R$ 9,90 (Upgrade Opcional)
 
@@ -62,7 +62,7 @@ Landing page para TrainLog - o app completo de rastreamento de treinos fitness.
 
 ## 🎨 Design
 
-- **O que você ganha:**## 💰 Modelo de PreçosLanding page for TrainLog - the complete fitness training tracker web app.This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- **O que você ganha:**## 💰 Modelo de PreçosLanding page for Tractus - the complete fitness training tracker web app.This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 - **Dark Theme:** Background escuro (#1a1a1a) com verde accent (#27AE60)
 
@@ -384,7 +384,7 @@ A landing page está pronta para PWA com:- ✅ **Benefits** - 4 benefícios prin
 
 - ✅ **CTA Modal** - Captura de leads para notificação de lançamento  - Suporte prioritário
 
-© 2025 TrainLog. Todos os direitos reservados.
+© 2025 Tractus. Todos os direitos reservados.
 
 - [ ] Executar `pnpm run build`
 
@@ -582,7 +582,7 @@ A landing page está pronta para PWA com:2. Edite o array `testimonials`- ✅ **
 
 ```
 
-© 2025 TrainLog. Todos os direitos reservados.
+© 2025 Tractus. Todos os direitos reservados.
 
 
 
@@ -734,7 +734,7 @@ pnpm build
 
 
 
-© 2025 TrainLog. Todos os direitos reservados.```typescript
+© 2025 Tractus. Todos os direitos reservados.```typescript
 
 
 
@@ -903,7 +903,7 @@ pnpm build### CTAModal.tsx
 
 - diário de academia
 
-© 2025 TrainLog. Todos os direitos reservados.- planilha de treino
+© 2025 Tractus. Todos os direitos reservados.- planilha de treino
 
 - treino fitness
 
@@ -932,7 +932,7 @@ pnpm build
 
 ## 📝 License
 
-© 2025 TrainLog. All rights reserved.
+© 2025 Tractus. All rights reserved.
 
 ---
 

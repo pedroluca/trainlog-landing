@@ -64,7 +64,7 @@ const Contact: React.FC = () => {
             </div>
             {/* <div>
               <h4 className="text-lg font-semibold text-white mb-2">O app funciona offline?</h4>
-              <p className="text-gray-400">Sim! Como PWA, o TrainLog funciona completamente offline. Seus dados sincronizam automaticamente quando você volta a ter conexão.</p>
+              <p className="text-gray-400">Sim! Como PWA, o Tractus funciona completamente offline. Seus dados sincronizam automaticamente quando você volta a ter conexão.</p>
             </div> */}
             <div>
               <h4 className="text-lg font-semibold text-white mb-2">Meus dados estão seguros?</h4>

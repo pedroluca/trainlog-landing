@@ -11,7 +11,7 @@ const Benefits: React.FC = () => {
     {
       icon: <Users className="w-12 h-12" />,
       title: 'Para Todos os Níveis',
-      description: 'Seja você iniciante ou avançado, o TrainLog se adapta ao seu ritmo e objetivos.'
+      description: 'Seja você iniciante ou avançado, o Tractus se adapta ao seu ritmo e objetivos.'
     },
     {
       icon: <TrendingUp className="w-12 h-12" />,
@@ -30,7 +30,7 @@ const Benefits: React.FC = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Por Que Escolher o <span className="text-primary">TrainLog?</span>
+            Por Que Escolher o <span className="text-primary">Tractus?</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Mais do que um app, é seu parceiro na jornada fitness

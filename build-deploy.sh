@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Script de build e preparação para deploy na Hostinger
-# TrainLog Landing Page
+# Tractus Landing Page
 
-echo "🚀 TrainLog - Build para Deploy"
+echo "🚀 Tractus - Build para Deploy"
 echo "================================"
 echo ""
 

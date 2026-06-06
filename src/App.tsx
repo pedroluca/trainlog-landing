@@ -197,9 +197,9 @@ function App() {
             onClick={() => scrollToSection('topo')}
             className="flex items-center gap-3 text-left"
           >
-            <img src={LogoBg} alt="TrainLog" className="h-12 md:h-14 w-12 md:w-14" />
+            <img src={LogoBg} alt="Tractus" className="h-12 md:h-14 w-12 md:w-14" />
             <div>
-              <p className="text-lg font-bold tracking-tight text-white">TrainLog</p>
+              <p className="text-lg font-bold tracking-tight text-white">Tractus</p>
               <p className="text-xs text-white/50">Seu treino. Sua evolução.</p>
             </div>
           </button>
@@ -299,7 +299,7 @@ function App() {
               <div className="hero-phone-second relative z-10 hidden translate-y-4 -rotate-6 drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)] sm:block sm:-mr-6">
                 <img
                   src={ScreenshotClear}
-                  alt="Tela de progresso do TrainLog"
+                  alt="Tela de progresso do Tractus"
                   className="w-[240px] sm:w-[280px] lg:w-[300px]"
                   loading="eager"
                 />
@@ -307,7 +307,7 @@ function App() {
               <div className="relative z-20 -translate-y-4 rotate-3 drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)] sm:-ml-6">
                 <img
                   src={ScreenshotMain}
-                  alt="Tela de treino do TrainLog"
+                  alt="Tela de treino do Tractus"
                   className="w-[240px] sm:w-[280px] lg:w-[300px]"
                   loading="eager"
                 />
@@ -753,7 +753,7 @@ function App() {
 
         <div className="mx-auto mt-12 max-w-7xl border-t border-white/10 pt-8">
           <div className="flex flex-col-reverse gap-6 lg:flex-row lg:items-center lg:justify-between">
-            <p className="text-sm text-white/42">© {currentYear} TrainLog. Todos os direitos reservados.</p>
+            <p className="text-sm text-white/42">© {currentYear} Tractus. Todos os direitos reservados.</p>
             <div className="flex items-center gap-4 text-white/45">
               <a
                 href="https://www.instagram.com/trainlog.app/"

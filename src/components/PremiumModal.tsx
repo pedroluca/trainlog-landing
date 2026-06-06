@@ -45,7 +45,7 @@ const PremiumModal: React.FC<PremiumModalProps> = ({ isOpen, onClose }) => {
             <ol className="space-y-3 text-gray-300">
               <li className="flex items-start">
                 <span className="text-gradient-premium font-bold mr-2">1.</span>
-                <span><strong className="text-white">Já tenha uma conta</strong> criada no TrainLog</span>
+                <span><strong className="text-white">Já tenha uma conta</strong> criada no Tractus</span>
               </li>
               <li className="flex items-start">
                 <span className="text-gradient-premium font-bold mr-2">2.</span>

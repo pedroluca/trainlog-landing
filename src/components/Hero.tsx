@@ -79,7 +79,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
               <div className="absolute inset-0 overflow-hidden">
                 <img 
                   src={AppScreenshot} 
-                  alt="TrainLog App Screenshot" 
+                  alt="Tractus App Screenshot" 
                   className="w-full h-full object-fill object-top"
                   loading="eager"
                 />

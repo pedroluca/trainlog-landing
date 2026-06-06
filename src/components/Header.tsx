@@ -24,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <img src={LogoBranca} className="w-10 h-10" />
-            <span className="text-2xl font-bold text-white">TrainLog</span>
+            <span className="text-2xl font-bold text-white">Tractus</span>
           </div>
 
           {/* Desktop Navigation */}

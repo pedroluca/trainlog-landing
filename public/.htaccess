@@ -1,4 +1,4 @@
-# TrainLog Landing Page - .htaccess Configuration
+# Tractus Landing Page - .htaccess Configuration
 
 # Enable Rewrite Engine
 <IfModule mod_rewrite.c>
@@ -148,4 +148,4 @@ AddDefaultCharset UTF-8
 
 # Redireciona /download para o arquivo APK
 RewriteEngine On
-RewriteRule ^download/?$ /download/TrainLog.apk [L,R=302]
+RewriteRule ^download/?$ /download/Tractus.apk [L,R=302]

@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <img src={LogoBranca} className="w-10 h-10" />
-              <span className="text-2xl font-bold text-white">TrainLog</span>
+              <span className="text-2xl font-bold text-white">Tractus</span>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
               Transforme seus treinos em resultados. O app completo para rastrear sua evolução na academia.
@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">
-            © {currentYear} TrainLog. Todos os direitos reservados.
+            © {currentYear} Tractus. Todos os direitos reservados.
           </p>
           <p className="text-gray-400 text-sm">
             Desenvolvido por{' '}
