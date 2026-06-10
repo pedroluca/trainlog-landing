@@ -125,6 +125,16 @@ const testimonials = [
     role: 'Tecnóloga em Agroindústria',
     text: 'O aplicativo funciona muito bem para o proposto, sendo possível acompanhar meus treinos diariamente, contar o tempo de uso e acompanhar o progresso de peso. Posso acompanhar amigos e compartilhar meus treinos, o que é ótimo para manter a motivação. O design é simples e fácil de usar, o que torna a experiência agradável.',
   },
+  {
+    name: 'Vinícius',
+    role: 'Estudante',
+    text: 'O aplicativo tem um excelente propósito. Ele é fácil de mexer, possui ótimas funções, um variedade enorme de exercícios e o cronômetro funciona bem enquanto o aplicativo está aberto, mas, pelo menos no meu celular, quando ele fica em segundo plano o cronômetro da uma leve bugada, ou seja, o tempo fica travado.',
+  },
+  {
+    name: 'Eva Milena',
+    role: 'Estudante',
+    text: 'O aplicativo é muito bom e tem me ajudado bastante a manter a organização dos treinos e acompanhar minha evolução. A interface é prática, intuitiva e torna o processo de registrar os exercícios muito mais fácil. Uma sugestão de melhoria seria na opção dos check-ins: seria interessante que eles pudessem ser contabilizados a partir de um número mínimo de exercícios realizados (por exemplo, 4 exercícios). Em algumas semanas fazemos adaptações no treino ou reduzimos a quantidade de exercícios, e atualmente é necessário alterar as configurações para que o check-in seja contabilizado. Fora isso, a experiência tem sido excelente e recomendo o aplicativo.',
+  },
 ]
 
 function SectionTitle({
