@@ -1,6 +1,4 @@
 import { useRef, useState } from 'react'
-import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
-import { db, hasFirebaseConfig } from './firebase'
 import {
   ArrowRight,
   BarChart3,
@@ -170,9 +168,6 @@ function SectionTitle({
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [waitlistEmail, setWaitlistEmail] = useState('')
-  const [waitlistError, setWaitlistError] = useState('')
-  const [waitlistSuccess, setWaitlistSuccess] = useState('')
   const testimonialsScrollerRef = useRef<HTMLDivElement | null>(null)
 
   const scrollToSection = (id: string) => {
@@ -601,7 +596,7 @@ function App() {
                   </span>
                 </h2>
                 <p className="mx-auto mt-4 max-w-2xl text-pretty text-base leading-7 text-white/60">
-                  Disponível como Web App para iPhone e em acesso antecipado no Android.
+                  Disponível como Web App para iPhone e na Google Play para Android.
                 </p>
 
                 <div className="mt-10 flex flex-col lg:flex-row items-stretch md:items-center justify-center gap-8">
@@ -610,90 +605,39 @@ function App() {
                     href="https://app.trainlog.site"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex lg:w-52 items-center justify-center rounded-2xl bg-white p-4 text-center shadow-sm"
+                    className="flex lg:w-52 items-center justify-center rounded-2xl bg-white/80 p-4 text-center shadow-sm"
                   >
                     <div>
-                      <div className="text-xs text-[#27AE60]/80">iPhone — Web App</div>
+                      <div className="text-xs text-black">Disponível para iOS</div>
                       <div className="mt-2 flex items-center justify-center gap-2 text-lg font-bold text-black">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="#000" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                           <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                         </svg>
-                        Abrir PWA
+                        Webapp
                       </div>
                     </div>
                   </a>
 
-                  {/* Right: Waitlist form */}
-                  <div className="w-full lg:w-[520px] rounded-2xl border border-[#27AE60]/20 bg-[#07110b] p-4">
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                      <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1.2L13.2 12 1 22.8V1.2z" fill="#4285F4"/>
-                        <path d="M1 1.2l16 9.4-3.8 1.4L1 1.2z" fill="#34A853"/>
-                        <path d="M1 22.8l12.2-11-3.8-1.4L1 22.8z" fill="#EA4335"/>
-                        <path d="M17 10.6l4 2.4-4 2.4-3.8-2.4 3.8-2.4z" fill="#FBBC05"/>
-                      </svg>
-                      <div className="text-left pl-2">
-                        <div className="mb-0 text-xs text-white/50">Android — Acesso Antecipado</div>
-                        <div className="mb-2 font-semibold text-white">Entrar na lista de espera</div>
+                  {/* Right: Google Play */}
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.trainlog.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex lg:w-52 items-center justify-center rounded-2xl bg-white/80 p-4 text-center shadow-sm"
+                  >
+                    <div>
+                      <div className="text-xs text-black">Disponível para Android</div>
+                      <div className="mt-2 flex items-center justify-center gap-2 text-lg font-bold text-black">
+                        <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                          <path d="M1 1.2L13.2 12 1 22.8V1.2z" fill="#4285F4"/>
+                          <path d="M1 1.2l16 9.4-3.8 1.4L1 1.2z" fill="#34A853"/>
+                          <path d="M1 22.8l12.2-11-3.8-1.4L1 22.8z" fill="#EA4335"/>
+                          <path d="M17 10.6l4 2.4-4 2.4-3.8-2.4 3.8-2.4z" fill="#FBBC05"/>
+                        </svg>
+                        Google Play
                       </div>
                     </div>
-                    <form
-                      onSubmit={async (e) => {
-                        e.preventDefault()
-                        setWaitlistError('')
-                        setWaitlistSuccess('')
-
-                        const normalized = (waitlistEmail || '').trim().toLowerCase()
-                        if (!normalized || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalized)) {
-                          setWaitlistError('Informe um email válido.')
-                          return
-                        }
-
-                        if (!db || !hasFirebaseConfig) {
-                          setWaitlistError('Integração indisponível no momento. Tente novamente mais tarde.')
-                          return
-                        }
-
-                        try {
-                          await addDoc(collection(db, 'google_play_waitlist'), {
-                            email: normalized,
-                            status: 'pending',
-                            source: 'landing_google_play',
-                            interestType: 'google_play_access',
-                            followUpStatus: 'needs_admin_review',
-                            locale: navigator.language || 'unknown',
-                            userAgent: navigator.userAgent || 'unknown',
-                            requestCount: 1,
-                            createdAt: serverTimestamp(),
-                            updatedAt: serverTimestamp(),
-                          })
-
-                          setWaitlistSuccess('Perfeito! Recebemos seu e-mail e iremos avisar quando abrir o acesso.')
-                          setWaitlistEmail('')
-                        } catch (err) {
-                          console.error('Erro ao enviar waitlist:', err)
-                          setWaitlistError('Não foi possível registrar agora. Tente novamente mais tarde.')
-                        }
-                      }}
-                      className="mt-3 flex flex-col md:flex-row items-center gap-3"
-                    >
-                      <input
-                        type="email"
-                        value={waitlistEmail}
-                        onChange={(e) => setWaitlistEmail(e.target.value)}
-                        placeholder="seu@email.com"
-                        className="flex-1 rounded-full border border-white/8 bg-black/40 px-4 py-3 text-sm text-white placeholder:text-white/40"
-                      />
-                      <button
-                        type="submit"
-                        className="rounded-full w-full md:w-auto bg-[#27AE60] px-5 py-3 text-sm font-semibold text-black"
-                      >
-                        Enviar
-                      </button>
-                    </form>
-                    {waitlistError ? <p className="mt-3 text-sm text-red-400">{waitlistError}</p> : null}
-                    {waitlistSuccess ? <p className="mt-3 text-sm text-emerald-300">{waitlistSuccess}</p> : null}
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
