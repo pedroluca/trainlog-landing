@@ -10,7 +10,7 @@ const PremiumModal: React.FC<PremiumModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   const handleAccessApp = () => {
-    window.open('https://app.trainlog.site', '_blank');
+    window.open('https://apptractus.com.br', '_blank');
     onClose();
   };
 

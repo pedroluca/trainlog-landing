@@ -28,7 +28,7 @@ const CTAModal: React.FC<CTAModalProps> = ({ isOpen, onClose }) => {
   const isValidEmail = (value: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 
   const handleAccessWebApp = () => {
-    window.open('https://app.trainlog.site', '_blank');
+    window.open('https://apptractus.com.br', '_blank');
     onClose();
   };
 

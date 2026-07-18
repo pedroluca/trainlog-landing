@@ -274,7 +274,7 @@ pnpm run dev- **Premium Styling:** Gradiente dourado para recursos premium (#F59
 
 **Modais:**
 
-- CTAModal.tsx - Direciona para `app.trainlog.site`
+- CTAModal.tsx - Direciona para `apptractus.com.br`
 
 - PremiumModal.tsx - Instruções de upgrade no perfil
 
@@ -472,7 +472,7 @@ Edite os seguintes arquivos:
 
 **Modais:**
 
-- CTAModal.tsx - Direciona para `app.trainlog.site`# Build para produção
+- CTAModal.tsx - Direciona para `apptractus.com.br`# Build para produção
 
 - PremiumModal.tsx - Instruções de upgrade no perfil
 
