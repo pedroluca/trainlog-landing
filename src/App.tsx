@@ -515,7 +515,7 @@ function App() {
                 </ul>
 
                 <a
-                  href="https://app.trainlog.site"
+                  href="https://apptractus.com.br"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/10 bg-transparent px-6 py-4 text-sm font-bold text-white transition hover:bg-white/3"
@@ -602,7 +602,7 @@ function App() {
                 <div className="mt-10 flex flex-col lg:flex-row items-stretch md:items-center justify-center gap-8">
                   {/* Left: Abrir PWA */}
                   <a
-                    href="https://app.trainlog.site"
+                    href="https://apptractus.com.br"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex lg:w-52 items-center justify-center rounded-2xl bg-white/80 p-4 text-center shadow-sm"
@@ -698,7 +698,7 @@ function App() {
               <button onClick={() => scrollToSection('contato')} className="text-left transition hover:text-white">
                 Contato
               </button>
-              <button onClick={() => window.open('https://app.trainlog.site/privacy', '_blank')} className="text-left transition hover:text-white">
+              <button onClick={() => window.open('https://apptractus.com.br/privacy', '_blank')} className="text-left transition hover:text-white">
                 Termos e Privacidade
               </button>
             </div>
