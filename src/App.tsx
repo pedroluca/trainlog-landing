@@ -30,9 +30,9 @@ const navItems = [
 ]
 
 const metrics = [
-  { value: '40+', label: 'Usuários ativos' },
+  { value: '60+', label: 'Usuários ativos' },
   { value: '1000+', label: 'Treinos registrados' },
-  { value: '5.0', label: 'Nota média' },
+  { value: '4.9', label: 'Nota média' },
   { value: '98%', label: 'Retenção mensal' },
 ]
 
